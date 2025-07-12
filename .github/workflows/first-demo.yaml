@@ -1,0 +1,14 @@
+name : first-demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@4
+
+      - name: Build
+        run:  echo "Build Code"
