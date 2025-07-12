@@ -29,6 +29,7 @@ jobs:
           path: target/site/jacoco/index.html
 
       - name: Run SonarQube Scanner
+        shell: pwsh
         run: |
           mvn sonar:sonar `
             -Dsonar.projectKey=sonardemo `
