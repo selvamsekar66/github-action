@@ -8,7 +8,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@4
+        uses: actions/checkout@v3
 
       - name: Build
         run:  echo "Build Code"
